@@ -1,0 +1,18 @@
+//
+//  Target.xcconfig
+//  Politeer
+//
+
+PRODUCT_NAME = KVO
+
+CODE_SIGN_IDENTITY =
+
+CLANG_CXX_LANGUAGE_STANDARD = gnu++17
+
+PRODUCT_BUNDLE_IDENTIFIER = com.0xxd0.$(PRODUCT_NAME:rfc1034identifier)
+
+INFOPLIST_FILE = $(SRCROOT)/Sources/Info.plist
+
+IPHONEOS_DEPLOYMENT_TARGET = 8.0
+
+SWIFT_VERSION = 3.2
