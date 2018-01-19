@@ -9,7 +9,7 @@ import XCTest
 
 class Object: NSObject {
     
-    @objc dynamic var key = ""
+    @objc dynamic var key: String = "oldValue"
 }
 
 class KVOTests: XCTestCase {
@@ -32,8 +32,7 @@ class KVOTests: XCTestCase {
         }, didSet: nil)
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        o.key = "x"
-        
+        o.key = "newValue"
     }
     
     func testPerformanceExample() {

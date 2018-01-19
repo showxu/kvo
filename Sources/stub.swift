@@ -1,4 +1,4 @@
-//
+ //
 //  KVO.stub.swift
 //  KVO.swift
 //
@@ -50,9 +50,9 @@ let _setter_stub_impl: _setter_stub_impl_type = { (`self`, _cmd, newValue) -> Vo
             (body as? ((Any) -> Void))?(newValue)
         })
     }
-  
-    // @objc thunk lookUpImpOrForward crash
-    // objc_msgSendSuper(&spr, _cmd, newValue)
+
+    // FIXME: runtime crash
+    objc_msgSendSuper(&spr, _cmd, newValue)
     
     if let didSet = ctx[Observable.didSet] {
         didSet.forEach({ (body) in

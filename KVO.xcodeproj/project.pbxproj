@@ -14,18 +14,18 @@
 		333D5959200CA384002EDEC1 /* String+KVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333D5958200CA384002EDEC1 /* String+KVO.swift */; };
 		3376E8872011B4B4009E6E35 /* objc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3376E8862011B4B4009E6E35 /* objc.swift */; };
 		33844F0B2011CDF500EC8AE3 /* objc.c in Sources */ = {isa = PBXBuildFile; fileRef = 33844F092011CDF500EC8AE3 /* objc.c */; };
+		33844F522011E86300EC8AE3 /* KVO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33A5E2FC200C638100FF71DB /* KVO.framework */; };
+		33844F582011E87600EC8AE3 /* KVOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A5E31B200C660F00FF71DB /* KVOTests.swift */; };
 		33A5E30A200C63A300FF71DB /* KVO.h in Headers */ = {isa = PBXBuildFile; fileRef = 33A5E308200C63A300FF71DB /* KVO.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		33A5E31C200C660F00FF71DB /* KVOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A5E31B200C660F00FF71DB /* KVOTests.swift */; };
-		33A5E31E200C660F00FF71DB /* KVO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33A5E2FC200C638100FF71DB /* KVO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		33A5E31F200C660F00FF71DB /* PBXContainerItemProxy */ = {
+		33844F532011E86300EC8AE3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 33A5E2F3200C638000FF71DB /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 33A5E2FB200C638100FF71DB;
-			remoteInfo = Piloteer;
+			remoteInfo = KVO;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -37,29 +37,27 @@
 		333D5958200CA384002EDEC1 /* String+KVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+KVO.swift"; sourceTree = "<group>"; };
 		3376E8862011B4B4009E6E35 /* objc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = objc.swift; sourceTree = "<group>"; };
 		33844F092011CDF500EC8AE3 /* objc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = objc.c; sourceTree = "<group>"; };
+		33844F4D2011E86300EC8AE3 /* KVO Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KVO Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33A5E2FC200C638100FF71DB /* KVO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KVO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33A5E308200C63A300FF71DB /* KVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVO.h; sourceTree = "<group>"; };
 		33A5E309200C63A300FF71DB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		33A5E319200C660F00FF71DB /* KVO Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KVO Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33A5E31B200C660F00FF71DB /* KVOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVOTests.swift; sourceTree = "<group>"; };
 		33A5E31D200C660F00FF71DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		33A5E324200C665000FF71DB /* Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Tests.xcconfig; sourceTree = "<group>"; };
-		33A5E325200C665100FF71DB /* Target.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Target.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		33844F4A2011E86300EC8AE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33844F522011E86300EC8AE3 /* KVO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		33A5E2F8200C638100FF71DB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		33A5E316200C660F00FF71DB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				33A5E31E200C660F00FF71DB /* KVO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,13 +85,20 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		33844F182011E39200EC8AE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		33A5E2F2200C638000FF71DB = {
 			isa = PBXGroup;
 			children = (
 				33A5E307200C63A300FF71DB /* Sources */,
 				33A5E31A200C660F00FF71DB /* Tests */,
-				33A5E313200C64EE00FF71DB /* Config */,
 				33A5E2FD200C638100FF71DB /* Products */,
+				33844F182011E39200EC8AE3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,7 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				33A5E2FC200C638100FF71DB /* KVO.framework */,
-				33A5E319200C660F00FF71DB /* KVO Tests.xctest */,
+				33844F4D2011E86300EC8AE3 /* KVO Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,15 +119,6 @@
 				33A5E327200C671F00FF71DB /* Supporting Files */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		33A5E313200C64EE00FF71DB /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				33A5E325200C665100FF71DB /* Target.xcconfig */,
-				33A5E324200C665000FF71DB /* Tests.xcconfig */,
-			);
-			path = Config;
 			sourceTree = "<group>";
 		};
 		33A5E31A200C660F00FF71DB /* Tests */ = {
@@ -165,6 +161,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		33844F4C2011E86300EC8AE3 /* KVO Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33844F552011E86300EC8AE3 /* Build configuration list for PBXNativeTarget "KVO Tests" */;
+			buildPhases = (
+				33844F492011E86300EC8AE3 /* Sources */,
+				33844F4A2011E86300EC8AE3 /* Frameworks */,
+				33844F4B2011E86300EC8AE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33844F542011E86300EC8AE3 /* PBXTargetDependency */,
+			);
+			name = "KVO Tests";
+			productName = "KVO Tests";
+			productReference = 33844F4D2011E86300EC8AE3 /* KVO Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		33A5E2FB200C638100FF71DB /* KVO */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33A5E304200C638100FF71DB /* Build configuration list for PBXNativeTarget "KVO" */;
@@ -183,24 +197,6 @@
 			productReference = 33A5E2FC200C638100FF71DB /* KVO.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		33A5E318200C660F00FF71DB /* KVO Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 33A5E321200C660F00FF71DB /* Build configuration list for PBXNativeTarget "KVO Tests" */;
-			buildPhases = (
-				33A5E315200C660F00FF71DB /* Sources */,
-				33A5E316200C660F00FF71DB /* Frameworks */,
-				33A5E317200C660F00FF71DB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				33A5E320200C660F00FF71DB /* PBXTargetDependency */,
-			);
-			name = "KVO Tests";
-			productName = "Piloteer Tests";
-			productReference = 33A5E319200C660F00FF71DB /* KVO Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -211,13 +207,13 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = 0xxd0;
 				TargetAttributes = {
+					33844F4C2011E86300EC8AE3 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
 					33A5E2FB200C638100FF71DB = {
 						CreatedOnToolsVersion = 9.0.1;
 						LastSwiftMigration = 0900;
-						ProvisioningStyle = Automatic;
-					};
-					33A5E318200C660F00FF71DB = {
-						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -235,20 +231,20 @@
 			projectRoot = "";
 			targets = (
 				33A5E2FB200C638100FF71DB /* KVO */,
-				33A5E318200C660F00FF71DB /* KVO Tests */,
+				33844F4C2011E86300EC8AE3 /* KVO Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		33A5E2FA200C638100FF71DB /* Resources */ = {
+		33844F4B2011E86300EC8AE3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		33A5E317200C660F00FF71DB /* Resources */ = {
+		33A5E2FA200C638100FF71DB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -258,6 +254,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		33844F492011E86300EC8AE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33844F582011E87600EC8AE3 /* KVOTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		33A5E2F7200C638100FF71DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -272,25 +276,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		33A5E315200C660F00FF71DB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				33A5E31C200C660F00FF71DB /* KVOTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		33A5E320200C660F00FF71DB /* PBXTargetDependency */ = {
+		33844F542011E86300EC8AE3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 33A5E2FB200C638100FF71DB /* KVO */;
-			targetProxy = 33A5E31F200C660F00FF71DB /* PBXContainerItemProxy */;
+			targetProxy = 33844F532011E86300EC8AE3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		33844F562011E86300EC8AE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.0xxd0.KVOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		33844F572011E86300EC8AE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.0xxd0.KVOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 		33A5E302200C638100FF71DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -320,7 +344,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -342,9 +366,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -379,7 +404,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -394,8 +419,9 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -404,7 +430,6 @@
 		};
 		33A5E305200C638100FF71DB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33A5E325200C665100FF71DB /* Target.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -413,19 +438,20 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PLIST_FILE_OUTPUT_FORMAT = "same-as-input";
+				PRODUCT_BUNDLE_IDENTIFIER = com.0xxd0.KVO;
+				PRODUCT_NAME = KVO;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		33A5E306200C638100FF71DB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33A5E325200C665100FF71DB /* Target.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -434,33 +460,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PLIST_FILE_OUTPUT_FORMAT = "same-as-input";
+				PRODUCT_BUNDLE_IDENTIFIER = com.0xxd0.KVO;
+				PRODUCT_NAME = KVO;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		33A5E322200C660F00FF71DB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33A5E324200C665000FF71DB /* Tests.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		33A5E323200C660F00FF71DB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33A5E324200C665000FF71DB /* Tests.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -468,6 +474,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		33844F552011E86300EC8AE3 /* Build configuration list for PBXNativeTarget "KVO Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33844F562011E86300EC8AE3 /* Debug */,
+				33844F572011E86300EC8AE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		33A5E2F6200C638000FF71DB /* Build configuration list for PBXProject "KVO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -482,15 +497,6 @@
 			buildConfigurations = (
 				33A5E305200C638100FF71DB /* Debug */,
 				33A5E306200C638100FF71DB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		33A5E321200C660F00FF71DB /* Build configuration list for PBXNativeTarget "KVO Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				33A5E322200C660F00FF71DB /* Debug */,
-				33A5E323200C660F00FF71DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
