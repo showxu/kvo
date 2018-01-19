@@ -5,6 +5,12 @@
 //
 
 import XCTest
+@testable import KVO
+
+class Object: NSObject {
+    
+    @objc dynamic var key = ""
+}
 
 class KVOTests: XCTestCase {
     
@@ -19,8 +25,15 @@ class KVOTests: XCTestCase {
     }
     
     func testExample() {
+        //let m = class_getInstanceMethod(KVOTests.self, #selector(setter: KVOTests.key));
+        let o = Object()
+        KVO.observe(o, for: "key", willSet: { (x: Any) in return
+            print("callback")
+        }, didSet: nil)
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        o.key = "x"
+        
     }
     
     func testPerformanceExample() {

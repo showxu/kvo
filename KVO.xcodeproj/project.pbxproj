@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3333BD9220119D55000A37E1 /* ContiguousArray+Inspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3333BD9120119D55000A37E1 /* ContiguousArray+Inspector.swift */; };
 		333D5951200C9D09002EDEC1 /* thunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333D594E200C9C0C002EDEC1 /* thunk.swift */; };
 		333D5953200C9DF6002EDEC1 /* stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333D5952200C9DF6002EDEC1 /* stub.swift */; };
-		333D5955200C9F97002EDEC1 /* NSObject+KVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333D5954200C9F97002EDEC1 /* NSObject+KVO.swift */; };
 		333D5957200CA024002EDEC1 /* Selector+KVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333D5956200CA024002EDEC1 /* Selector+KVO.swift */; };
 		333D5959200CA384002EDEC1 /* String+KVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333D5958200CA384002EDEC1 /* String+KVO.swift */; };
-		333D595E200CAE7F002EDEC1 /* message.h in Headers */ = {isa = PBXBuildFile; fileRef = 333D595C200CAE7F002EDEC1 /* message.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		333D5962200CB809002EDEC1 /* message.mm in Sources */ = {isa = PBXBuildFile; fileRef = 333D5960200CB809002EDEC1 /* message.mm */; };
+		3376E8872011B4B4009E6E35 /* objc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3376E8862011B4B4009E6E35 /* objc.swift */; };
+		33844F0B2011CDF500EC8AE3 /* objc.c in Sources */ = {isa = PBXBuildFile; fileRef = 33844F092011CDF500EC8AE3 /* objc.c */; };
 		33A5E30A200C63A300FF71DB /* KVO.h in Headers */ = {isa = PBXBuildFile; fileRef = 33A5E308200C63A300FF71DB /* KVO.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33A5E31C200C660F00FF71DB /* KVOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A5E31B200C660F00FF71DB /* KVOTests.swift */; };
 		33A5E31E200C660F00FF71DB /* KVO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33A5E2FC200C638100FF71DB /* KVO.framework */; };
@@ -30,21 +30,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3333BD9120119D55000A37E1 /* ContiguousArray+Inspector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ContiguousArray+Inspector.swift"; sourceTree = "<group>"; };
 		333D594E200C9C0C002EDEC1 /* thunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thunk.swift; sourceTree = "<group>"; };
 		333D5952200C9DF6002EDEC1 /* stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stub.swift; sourceTree = "<group>"; };
-		333D5954200C9F97002EDEC1 /* NSObject+KVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+KVO.swift"; sourceTree = "<group>"; };
 		333D5956200CA024002EDEC1 /* Selector+KVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Selector+KVO.swift"; sourceTree = "<group>"; };
 		333D5958200CA384002EDEC1 /* String+KVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+KVO.swift"; sourceTree = "<group>"; };
-		333D595C200CAE7F002EDEC1 /* message.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = message.h; sourceTree = "<group>"; };
-		333D5960200CB809002EDEC1 /* message.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = message.mm; sourceTree = "<group>"; };
+		3376E8862011B4B4009E6E35 /* objc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = objc.swift; sourceTree = "<group>"; };
+		33844F092011CDF500EC8AE3 /* objc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = objc.c; sourceTree = "<group>"; };
 		33A5E2FC200C638100FF71DB /* KVO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KVO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33A5E308200C63A300FF71DB /* KVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVO.h; sourceTree = "<group>"; };
 		33A5E309200C63A300FF71DB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		33A5E30C200C63BB00FF71DB /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = Sources/Package.swift; sourceTree = SOURCE_ROOT; };
-		33A5E30F200C645300FF71DB /* KVO.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = KVO.podspec; sourceTree = "<group>"; };
-		33A5E310200C647E00FF71DB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		33A5E311200C648600FF71DB /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		33A5E312200C649F00FF71DB /* .swift-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
 		33A5E319200C660F00FF71DB /* KVO Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KVO Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33A5E31B200C660F00FF71DB /* KVOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVOTests.swift; sourceTree = "<group>"; };
 		33A5E31D200C660F00FF71DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,8 +71,8 @@
 			children = (
 				333D594E200C9C0C002EDEC1 /* thunk.swift */,
 				333D5952200C9DF6002EDEC1 /* stub.swift */,
-				333D595C200CAE7F002EDEC1 /* message.h */,
-				333D5960200CB809002EDEC1 /* message.mm */,
+				3376E8862011B4B4009E6E35 /* objc.swift */,
+				33844F092011CDF500EC8AE3 /* objc.c */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -85,7 +80,7 @@
 		333E8DE8200C7A5700453EC8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				333D5954200C9F97002EDEC1 /* NSObject+KVO.swift */,
+				3333BD9120119D55000A37E1 /* ContiguousArray+Inspector.swift */,
 				333D5956200CA024002EDEC1 /* Selector+KVO.swift */,
 				333D5958200CA384002EDEC1 /* String+KVO.swift */,
 			);
@@ -98,7 +93,6 @@
 				33A5E307200C63A300FF71DB /* Sources */,
 				33A5E31A200C660F00FF71DB /* Tests */,
 				33A5E313200C64EE00FF71DB /* Config */,
-				33A5E30E200C63C100FF71DB /* Deployment */,
 				33A5E2FD200C638100FF71DB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,18 +114,6 @@
 				33A5E327200C671F00FF71DB /* Supporting Files */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		33A5E30E200C63C100FF71DB /* Deployment */ = {
-			isa = PBXGroup;
-			children = (
-				33A5E30C200C63BB00FF71DB /* Package.swift */,
-				33A5E30F200C645300FF71DB /* KVO.podspec */,
-				33A5E312200C649F00FF71DB /* .swift-version */,
-				33A5E310200C647E00FF71DB /* README.md */,
-				33A5E311200C648600FF71DB /* LICENSE */,
-			);
-			name = Deployment;
 			sourceTree = "<group>";
 		};
 		33A5E313200C64EE00FF71DB /* Config */ = {
@@ -176,7 +158,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				333D595E200CAE7F002EDEC1 /* message.h in Headers */,
 				33A5E30A200C63A300FF71DB /* KVO.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,9 +165,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		33A5E2FB200C638100FF71DB /* KVO.swift */ = {
+		33A5E2FB200C638100FF71DB /* KVO */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 33A5E304200C638100FF71DB /* Build configuration list for PBXNativeTarget "KVO.swift" */;
+			buildConfigurationList = 33A5E304200C638100FF71DB /* Build configuration list for PBXNativeTarget "KVO" */;
 			buildPhases = (
 				33A5E2F7200C638100FF71DB /* Sources */,
 				33A5E2F8200C638100FF71DB /* Frameworks */,
@@ -197,14 +178,14 @@
 			);
 			dependencies = (
 			);
-			name = KVO.swift;
+			name = KVO;
 			productName = Piloteer;
 			productReference = 33A5E2FC200C638100FF71DB /* KVO.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		33A5E318200C660F00FF71DB /* KVO.swift Tests */ = {
+		33A5E318200C660F00FF71DB /* KVO Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 33A5E321200C660F00FF71DB /* Build configuration list for PBXNativeTarget "KVO.swift Tests" */;
+			buildConfigurationList = 33A5E321200C660F00FF71DB /* Build configuration list for PBXNativeTarget "KVO Tests" */;
 			buildPhases = (
 				33A5E315200C660F00FF71DB /* Sources */,
 				33A5E316200C660F00FF71DB /* Frameworks */,
@@ -215,7 +196,7 @@
 			dependencies = (
 				33A5E320200C660F00FF71DB /* PBXTargetDependency */,
 			);
-			name = "KVO.swift Tests";
+			name = "KVO Tests";
 			productName = "Piloteer Tests";
 			productReference = 33A5E319200C660F00FF71DB /* KVO Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -241,7 +222,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 33A5E2F6200C638000FF71DB /* Build configuration list for PBXProject "KVO.swift" */;
+			buildConfigurationList = 33A5E2F6200C638000FF71DB /* Build configuration list for PBXProject "KVO" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -253,8 +234,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				33A5E2FB200C638100FF71DB /* KVO.swift */,
-				33A5E318200C660F00FF71DB /* KVO.swift Tests */,
+				33A5E2FB200C638100FF71DB /* KVO */,
+				33A5E318200C660F00FF71DB /* KVO Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -282,11 +263,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				333D5959200CA384002EDEC1 /* String+KVO.swift in Sources */,
+				3376E8872011B4B4009E6E35 /* objc.swift in Sources */,
 				333D5951200C9D09002EDEC1 /* thunk.swift in Sources */,
+				3333BD9220119D55000A37E1 /* ContiguousArray+Inspector.swift in Sources */,
 				333D5957200CA024002EDEC1 /* Selector+KVO.swift in Sources */,
-				333D5955200C9F97002EDEC1 /* NSObject+KVO.swift in Sources */,
+				33844F0B2011CDF500EC8AE3 /* objc.c in Sources */,
 				333D5953200C9DF6002EDEC1 /* stub.swift in Sources */,
-				333D5962200CB809002EDEC1 /* message.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +285,7 @@
 /* Begin PBXTargetDependency section */
 		33A5E320200C660F00FF71DB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 33A5E2FB200C638100FF71DB /* KVO.swift */;
+			target = 33A5E2FB200C638100FF71DB /* KVO */;
 			targetProxy = 33A5E31F200C660F00FF71DB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -486,7 +468,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		33A5E2F6200C638000FF71DB /* Build configuration list for PBXProject "KVO.swift" */ = {
+		33A5E2F6200C638000FF71DB /* Build configuration list for PBXProject "KVO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				33A5E302200C638100FF71DB /* Debug */,
@@ -495,7 +477,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		33A5E304200C638100FF71DB /* Build configuration list for PBXNativeTarget "KVO.swift" */ = {
+		33A5E304200C638100FF71DB /* Build configuration list for PBXNativeTarget "KVO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				33A5E305200C638100FF71DB /* Debug */,
@@ -504,7 +486,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		33A5E321200C660F00FF71DB /* Build configuration list for PBXNativeTarget "KVO.swift Tests" */ = {
+		33A5E321200C660F00FF71DB /* Build configuration list for PBXNativeTarget "KVO Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				33A5E322200C660F00FF71DB /* Debug */,

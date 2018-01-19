@@ -13,12 +13,11 @@ extension String {
         }
         let element = String(self[idx]).uppercased()
         guard idx > startIndex else {
-        
-            return "\(element)\(self[idx...])"
+            return "\(element)\(self[self.index(after: self.startIndex)...])"
         }
         guard idx < endIndex else {
             let element = self[idx]
-            return "\(self[...idx])\(element)"
+            return "\(self[...self.index(before: self.endIndex)])\(element)"
         }
         let leading = self[...index(before: idx)]
         let trailing = self[index(after: idx)...]
@@ -33,12 +32,11 @@ extension String {
         }
         let element = String(self[idx]).lowercased()
         guard idx > startIndex else {
-            
-            return "\(element)\(self[idx...])"
+            return "\(element)\(self[self.index(after: self.startIndex)...])"
         }
         guard idx < endIndex else {
             let element = self[idx]
-            return "\(self[...idx])\(element)"
+            return "\(self[...self.index(before: self.endIndex)])\(element)"
         }
         let leading = self[...index(before: idx)]
         let trailing = self[index(after: idx)...]
