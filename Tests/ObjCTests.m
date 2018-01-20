@@ -2,8 +2,6 @@
 //  kvoTests.m
 //  kvoTests
 //
-//  Created by Alchemist on 2018/1/20.
-//  Copyright © 2018年 0xxd0. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
@@ -20,6 +18,7 @@
 @implementation Observable @end
 
 @interface ObjCTests: XCTestCase
+
 @property (nonatomic, strong) Observable *observable;
 
 @end
@@ -37,14 +36,15 @@
     _observable.did = ^(id newValue) {
         assert([_weakObservable.key isEqualToString: newValue]);
     };
-    observe(self.observable, "key", _observable.will, _observable.did);
+    observe(_observable, "key", _observable.will, _observable.did);
 }
 
 - (void)testMain {
-    self.observable.key = @"v1";
-    self.observable.key = @"v2";
-    self.observable.key = @"v3";
-    self.observable.key = @"v4";
+    __auto_type values = @[@"v1", @"v2", @"v3", @"v4"];
+    [values enumerateObjectsUsingBlock:^(id _Nonnull value, NSUInteger idx, BOOL * _Nonnull stop) {
+        _observable.key = value;
+        XCTAssert([_observable.key isEqualToString: value]);
+    }];
 }
 
 @end
