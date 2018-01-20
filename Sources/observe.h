@@ -12,3 +12,5 @@ _Pragma("clang diagnostic ignored \"-Wdeprecated-declarations\"")
 _Pragma("clang diagnostic push")
 
 typedef void(^Callback)(id value);
+
+void observe(id observable, const char *key, Callback will, Callback did);

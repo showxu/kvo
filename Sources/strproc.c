@@ -41,7 +41,7 @@ void strlwc(char *__str) __attribute__((overloadable)) {
     while ((*__str = tolower(*__str))) __str ++;
 }
 
-void strlwc(char *__str, int __at)  __attribute__((overloadable)) {
+void strlwc(char __str[], int __at)  __attribute__((overloadable)) {
     __auto_type len = strlen(__str);
     __auto_type idx = 0;
     if (idx > len) return;
@@ -56,7 +56,7 @@ void strlwc(char *__str, int __at)  __attribute__((overloadable)) {
 bool strpre(const char *__str, const char *__prefix) {
     if (!__str || !__prefix) return false;
     __auto_type pos = strstr(__str, __prefix);
-    return *__str == *pos;
+    return pos && *__str == *pos ;
 }
 
 bool strsuf(char *__str, char *__suffix) {

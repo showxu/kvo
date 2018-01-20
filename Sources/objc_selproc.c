@@ -13,9 +13,12 @@ SEL _Nullable sel_setter(SEL sel) {
     if (!sel)
         return nil;
     __auto_type name = (char *)sel_getName(sel);
-    __auto_type len = strlen(name);
+    __auto_type len = strlen(name) + 1;
+    char buf[len];
+    memset(buf, '\0', (len)* sizeof(char));
+    name = strncpy(buf, name, len);
     if (!len) return nil;
-    strlwc(name, 0);
+    strupc(name, 0);
     char ret[len + 4];
     // O(n²)
     // strcat(strcat(strcpy(ret, "set"), name), ":");
@@ -29,11 +32,15 @@ SEL _Nullable sel_getter(SEL sel) {
         return nil;
     __auto_type name = (char *)sel_getName(sel);
     __auto_type len = strlen(name);
-    if (len <= 0 || !strpre(name, "set") || ! !strsuf(name, ":")) {
+    if (len <= 0 || !strpre(name, "set") || !strsuf(name, ":")) {
         return nil;
     }
-    name[len - 1] = '\0';
-    name += 3;
+    __auto_type offset = 3;
+    __auto_type buf_len = len - offset;
+    char buf[buf_len];
+    memset(buf, '\0', (buf_len)* sizeof(char));
+    name = strncpy(buf, name += offset, len);
+    name[buf_len - 1] = '\0';
     strlwc(name, 0);
     return sel_getUid(name);
 }
