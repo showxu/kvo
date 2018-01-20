@@ -5,11 +5,8 @@
 //
 
 #include "objc.h"
+#include "stub.h"
 #include <stdlib.h>
-
-static inline Class _class_impl_stub(id self, SEL _cmd) {
-    return class_getSuperclass(object_getClass(self));
-}
 
 struct objc_super object_getSuper(id object) {
     __auto_type cls = class_getSuperclass(object_getClass(object));

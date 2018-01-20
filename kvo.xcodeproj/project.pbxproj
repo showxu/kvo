@@ -18,6 +18,8 @@
 		33844FA8201243C900EC8AE3 /* stub.h in Headers */ = {isa = PBXBuildFile; fileRef = 33844FA6201243C900EC8AE3 /* stub.h */; };
 		33844FA9201243C900EC8AE3 /* stub.c in Sources */ = {isa = PBXBuildFile; fileRef = 33844FA7201243C900EC8AE3 /* stub.c */; };
 		33844FB020125E3100EC8AE3 /* obsv_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 33844FAF20125E3100EC8AE3 /* obsv_private.h */; };
+		33844FB4201305D900EC8AE3 /* strproc.c in Sources */ = {isa = PBXBuildFile; fileRef = 33844FB3201305D900EC8AE3 /* strproc.c */; };
+		33844FB6201307E200EC8AE3 /* selproc.c in Sources */ = {isa = PBXBuildFile; fileRef = 33844FB5201307E200EC8AE3 /* selproc.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		33844FA6201243C900EC8AE3 /* stub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stub.h; sourceTree = "<group>"; };
 		33844FA7201243C900EC8AE3 /* stub.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = stub.c; sourceTree = "<group>"; };
 		33844FAF20125E3100EC8AE3 /* obsv_private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = obsv_private.h; sourceTree = "<group>"; };
+		33844FB3201305D900EC8AE3 /* strproc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = strproc.c; sourceTree = "<group>"; };
+		33844FB5201307E200EC8AE3 /* selproc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = selproc.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 		33844F94201222C700EC8AE3 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				33844FB3201305D900EC8AE3 /* strproc.c */,
+				33844FB5201307E200EC8AE3 /* selproc.c */,
 				33844F952012232B00EC8AE3 /* objc.c */,
 				33844FA7201243C900EC8AE3 /* stub.c */,
 				33844FA420122E3000EC8AE3 /* obsv.c */,
@@ -109,7 +115,6 @@
 		33844FAA201246C000EC8AE3 /* Public Headers */ = {
 			isa = PBXGroup;
 			children = (
-				33844F9E20122C7900EC8AE3 /* selproc.h */,
 				33844FA020122D5300EC8AE3 /* strproc.h */,
 				33844F972012234E00EC8AE3 /* objc.h */,
 				33844FA220122E2000EC8AE3 /* obsv.h */,
@@ -128,6 +133,7 @@
 		33844FAD2012485D00EC8AE3 /* Project Headers */ = {
 			isa = PBXGroup;
 			children = (
+				33844F9E20122C7900EC8AE3 /* selproc.h */,
 				33844FA6201243C900EC8AE3 /* stub.h */,
 			);
 			name = "Project Headers";
@@ -221,6 +227,8 @@
 				33844FA520122E3000EC8AE3 /* obsv.c in Sources */,
 				33844FA9201243C900EC8AE3 /* stub.c in Sources */,
 				33844F962012232B00EC8AE3 /* objc.c in Sources */,
+				33844FB4201305D900EC8AE3 /* strproc.c in Sources */,
+				33844FB6201307E200EC8AE3 /* selproc.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

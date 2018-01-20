@@ -14,5 +14,4 @@ _Pragma("clang diagnostic ignored \"-Wdeprecated-declarations\"")
 _Pragma("clang diagnostic push")
 
 extern void _setter_impl_stub(id self, SEL _cmd, id newValue);
-
-
+extern Class _class_impl_stub(id self, SEL _cmd);

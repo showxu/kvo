@@ -12,5 +12,3 @@ _Pragma("clang diagnostic ignored \"-Wdeprecated-declarations\"")
 _Pragma("clang diagnostic push")
 
 typedef void(^Callback)(id value);
-
-

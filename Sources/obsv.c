@@ -24,7 +24,7 @@ void observe(id observable, char *key, Callback will, Callback did) {
     }
     __auto_type orig_class_name = class_getName(class);
     
-    if (!strprefix(orig_class_name, OBSERVABLE_PREFIX)) {
+    if (!strpre(orig_class_name, OBSERVABLE_PREFIX)) {
         __auto_type len = strlen(OBSERVABLE_PREFIX) + strlen(orig_class_name);
         char dst[len];
         __auto_type observable_class_name = strcat(strcpy(dst, OBSERVABLE_PREFIX), orig_class_name);
