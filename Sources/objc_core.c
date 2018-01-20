@@ -4,7 +4,7 @@
 //
 //
 
-#include "objc.h"
+#include "objc_core.h"
 #include "stub.h"
 #include <stdlib.h>
 

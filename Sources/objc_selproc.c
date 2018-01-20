@@ -4,7 +4,7 @@
 //
 //
 
-#include "selproc.h"
+#include "objc_selproc.h"
 #include "strproc.h"
 #include <stdio.h>
 #include <assert.h>

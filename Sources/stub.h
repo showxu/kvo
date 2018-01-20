@@ -1,5 +1,5 @@
 //
-//  stub.h
+//  stub
 //  kvo
 //
 //
@@ -7,11 +7,7 @@
 _Pragma("once")
 
 #include <stdio.h>
-
-_Pragma("clang diagnostic push")
-_Pragma("clang diagnostic ignored \"-Wdeprecated-declarations\"")
-#include <objc/hashtable2.h>
-_Pragma("clang diagnostic push")
+#include <objc/objc.h>
 
 extern void _setter_impl_stub(id self, SEL _cmd, id newValue);
 extern Class _class_impl_stub(id self, SEL _cmd);

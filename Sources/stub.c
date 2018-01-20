@@ -5,24 +5,14 @@
 //
 
 #include "stub.h"
-#include "selproc.h"
-#include "objc.h"
-#include "obsv.h"
-#include "obsv_private.h"
+#include "objc_selproc.h"
+#include "objc_core.h"
+#include "observe.h"
+#include "observe_priv.h"
+#include "hashtable2_algrithm.h"
+
 #include <objc/runtime.h>
 #include <objc/message.h>
-#include <objc/hashtable2.h>
-
-void foreach(NXHashTable *table, void (^body)(id)) {
-    if (!table) return;
-    __auto_type count = 0;
-    __auto_type buffer = nil;
-    __auto_type state = NXInitHashState(table);
-    while (NXNextHashState(table, &state, &buffer)) {
-        !body ?: body(buffer);
-        count++;
-    }
-}
 
 Class _class_impl_stub(id self, SEL _cmd) {
     return class_getSuperclass(object_getClass(self));

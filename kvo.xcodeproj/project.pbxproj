@@ -8,37 +8,41 @@
 
 /* Begin PBXBuildFile section */
 		33844F932012228B00EC8AE3 /* kvo.h in Headers */ = {isa = PBXBuildFile; fileRef = 33844F912012228B00EC8AE3 /* kvo.h */; };
-		33844F962012232B00EC8AE3 /* objc.c in Sources */ = {isa = PBXBuildFile; fileRef = 33844F952012232B00EC8AE3 /* objc.c */; };
-		33844F982012234E00EC8AE3 /* objc.h in Headers */ = {isa = PBXBuildFile; fileRef = 33844F972012234E00EC8AE3 /* objc.h */; };
+		33844F962012232B00EC8AE3 /* objc_core.c in Sources */ = {isa = PBXBuildFile; fileRef = 33844F952012232B00EC8AE3 /* objc_core.c */; };
+		33844F982012234E00EC8AE3 /* objc_core.h in Headers */ = {isa = PBXBuildFile; fileRef = 33844F972012234E00EC8AE3 /* objc_core.h */; };
 		33844F9C2012242F00EC8AE3 /* libobjc.A.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 33844F9A2012240D00EC8AE3 /* libobjc.A.tbd */; };
-		33844F9F20122C7900EC8AE3 /* selproc.h in Headers */ = {isa = PBXBuildFile; fileRef = 33844F9E20122C7900EC8AE3 /* selproc.h */; };
+		33844F9F20122C7900EC8AE3 /* objc_selproc.h in Headers */ = {isa = PBXBuildFile; fileRef = 33844F9E20122C7900EC8AE3 /* objc_selproc.h */; };
 		33844FA120122D5300EC8AE3 /* strproc.h in Headers */ = {isa = PBXBuildFile; fileRef = 33844FA020122D5300EC8AE3 /* strproc.h */; };
-		33844FA320122E2000EC8AE3 /* obsv.h in Headers */ = {isa = PBXBuildFile; fileRef = 33844FA220122E2000EC8AE3 /* obsv.h */; };
-		33844FA520122E3000EC8AE3 /* obsv.c in Sources */ = {isa = PBXBuildFile; fileRef = 33844FA420122E3000EC8AE3 /* obsv.c */; };
+		33844FA320122E2000EC8AE3 /* observe.h in Headers */ = {isa = PBXBuildFile; fileRef = 33844FA220122E2000EC8AE3 /* observe.h */; };
+		33844FA520122E3000EC8AE3 /* observe.c in Sources */ = {isa = PBXBuildFile; fileRef = 33844FA420122E3000EC8AE3 /* observe.c */; };
 		33844FA8201243C900EC8AE3 /* stub.h in Headers */ = {isa = PBXBuildFile; fileRef = 33844FA6201243C900EC8AE3 /* stub.h */; };
 		33844FA9201243C900EC8AE3 /* stub.c in Sources */ = {isa = PBXBuildFile; fileRef = 33844FA7201243C900EC8AE3 /* stub.c */; };
-		33844FB020125E3100EC8AE3 /* obsv_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 33844FAF20125E3100EC8AE3 /* obsv_private.h */; };
+		33844FB020125E3100EC8AE3 /* observe_priv.h in Headers */ = {isa = PBXBuildFile; fileRef = 33844FAF20125E3100EC8AE3 /* observe_priv.h */; };
 		33844FB4201305D900EC8AE3 /* strproc.c in Sources */ = {isa = PBXBuildFile; fileRef = 33844FB3201305D900EC8AE3 /* strproc.c */; };
-		33844FB6201307E200EC8AE3 /* selproc.c in Sources */ = {isa = PBXBuildFile; fileRef = 33844FB5201307E200EC8AE3 /* selproc.c */; };
+		33844FB6201307E200EC8AE3 /* objc_selproc.c in Sources */ = {isa = PBXBuildFile; fileRef = 33844FB5201307E200EC8AE3 /* objc_selproc.c */; };
+		33844FB92013189600EC8AE3 /* hashtable2_algrithm.h in Headers */ = {isa = PBXBuildFile; fileRef = 33844FB72013189600EC8AE3 /* hashtable2_algrithm.h */; };
+		33844FBA2013189600EC8AE3 /* hashtable2_algrithm.c in Sources */ = {isa = PBXBuildFile; fileRef = 33844FB82013189600EC8AE3 /* hashtable2_algrithm.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		33844F6B201221C300EC8AE3 /* kvo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = kvo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33844F902012228B00EC8AE3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33844F912012228B00EC8AE3 /* kvo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kvo.h; sourceTree = "<group>"; };
-		33844F952012232B00EC8AE3 /* objc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = objc.c; sourceTree = "<group>"; };
-		33844F972012234E00EC8AE3 /* objc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = objc.h; sourceTree = "<group>"; };
+		33844F952012232B00EC8AE3 /* objc_core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = objc_core.c; sourceTree = "<group>"; };
+		33844F972012234E00EC8AE3 /* objc_core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = objc_core.h; sourceTree = "<group>"; };
 		33844F9A2012240D00EC8AE3 /* libobjc.A.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libobjc.A.tbd; path = usr/lib/libobjc.A.tbd; sourceTree = SDKROOT; };
 		33844F9B2012241800EC8AE3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		33844F9E20122C7900EC8AE3 /* selproc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = selproc.h; sourceTree = "<group>"; };
+		33844F9E20122C7900EC8AE3 /* objc_selproc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = objc_selproc.h; sourceTree = "<group>"; };
 		33844FA020122D5300EC8AE3 /* strproc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = strproc.h; sourceTree = "<group>"; };
-		33844FA220122E2000EC8AE3 /* obsv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = obsv.h; sourceTree = "<group>"; };
-		33844FA420122E3000EC8AE3 /* obsv.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = obsv.c; sourceTree = "<group>"; };
+		33844FA220122E2000EC8AE3 /* observe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = observe.h; sourceTree = "<group>"; };
+		33844FA420122E3000EC8AE3 /* observe.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = observe.c; sourceTree = "<group>"; };
 		33844FA6201243C900EC8AE3 /* stub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stub.h; sourceTree = "<group>"; };
 		33844FA7201243C900EC8AE3 /* stub.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = stub.c; sourceTree = "<group>"; };
-		33844FAF20125E3100EC8AE3 /* obsv_private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = obsv_private.h; sourceTree = "<group>"; };
+		33844FAF20125E3100EC8AE3 /* observe_priv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = observe_priv.h; sourceTree = "<group>"; };
 		33844FB3201305D900EC8AE3 /* strproc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = strproc.c; sourceTree = "<group>"; };
-		33844FB5201307E200EC8AE3 /* selproc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = selproc.c; sourceTree = "<group>"; };
+		33844FB5201307E200EC8AE3 /* objc_selproc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = objc_selproc.c; sourceTree = "<group>"; };
+		33844FB72013189600EC8AE3 /* hashtable2_algrithm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hashtable2_algrithm.h; sourceTree = "<group>"; };
+		33844FB82013189600EC8AE3 /* hashtable2_algrithm.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hashtable2_algrithm.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,11 +98,12 @@
 		33844F94201222C700EC8AE3 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				33844FB3201305D900EC8AE3 /* strproc.c */,
-				33844FB5201307E200EC8AE3 /* selproc.c */,
-				33844F952012232B00EC8AE3 /* objc.c */,
+				33844FA420122E3000EC8AE3 /* observe.c */,
+				33844FB5201307E200EC8AE3 /* objc_selproc.c */,
+				33844F952012232B00EC8AE3 /* objc_core.c */,
 				33844FA7201243C900EC8AE3 /* stub.c */,
-				33844FA420122E3000EC8AE3 /* obsv.c */,
+				33844FB82013189600EC8AE3 /* hashtable2_algrithm.c */,
+				33844FB3201305D900EC8AE3 /* strproc.c */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -115,9 +120,7 @@
 		33844FAA201246C000EC8AE3 /* Public Headers */ = {
 			isa = PBXGroup;
 			children = (
-				33844FA020122D5300EC8AE3 /* strproc.h */,
-				33844F972012234E00EC8AE3 /* objc.h */,
-				33844FA220122E2000EC8AE3 /* obsv.h */,
+				33844FA220122E2000EC8AE3 /* observe.h */,
 			);
 			name = "Public Headers";
 			sourceTree = "<group>";
@@ -125,7 +128,7 @@
 		33844FAB201246C800EC8AE3 /* Private Headers */ = {
 			isa = PBXGroup;
 			children = (
-				33844FAF20125E3100EC8AE3 /* obsv_private.h */,
+				33844FAF20125E3100EC8AE3 /* observe_priv.h */,
 			);
 			name = "Private Headers";
 			sourceTree = "<group>";
@@ -133,7 +136,10 @@
 		33844FAD2012485D00EC8AE3 /* Project Headers */ = {
 			isa = PBXGroup;
 			children = (
-				33844F9E20122C7900EC8AE3 /* selproc.h */,
+				33844FA020122D5300EC8AE3 /* strproc.h */,
+				33844F9E20122C7900EC8AE3 /* objc_selproc.h */,
+				33844FB72013189600EC8AE3 /* hashtable2_algrithm.h */,
+				33844F972012234E00EC8AE3 /* objc_core.h */,
 				33844FA6201243C900EC8AE3 /* stub.h */,
 			);
 			name = "Project Headers";
@@ -146,12 +152,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33844FA320122E2000EC8AE3 /* obsv.h in Headers */,
-				33844F9F20122C7900EC8AE3 /* selproc.h in Headers */,
-				33844FB020125E3100EC8AE3 /* obsv_private.h in Headers */,
+				33844FB92013189600EC8AE3 /* hashtable2_algrithm.h in Headers */,
+				33844FA320122E2000EC8AE3 /* observe.h in Headers */,
+				33844F9F20122C7900EC8AE3 /* objc_selproc.h in Headers */,
+				33844FB020125E3100EC8AE3 /* observe_priv.h in Headers */,
 				33844FA8201243C900EC8AE3 /* stub.h in Headers */,
 				33844FA120122D5300EC8AE3 /* strproc.h in Headers */,
-				33844F982012234E00EC8AE3 /* objc.h in Headers */,
+				33844F982012234E00EC8AE3 /* objc_core.h in Headers */,
 				33844F932012228B00EC8AE3 /* kvo.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,11 +231,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33844FA520122E3000EC8AE3 /* obsv.c in Sources */,
+				33844FA520122E3000EC8AE3 /* observe.c in Sources */,
+				33844FBA2013189600EC8AE3 /* hashtable2_algrithm.c in Sources */,
 				33844FA9201243C900EC8AE3 /* stub.c in Sources */,
-				33844F962012232B00EC8AE3 /* objc.c in Sources */,
+				33844F962012232B00EC8AE3 /* objc_core.c in Sources */,
 				33844FB4201305D900EC8AE3 /* strproc.c in Sources */,
-				33844FB6201307E200EC8AE3 /* selproc.c in Sources */,
+				33844FB6201307E200EC8AE3 /* objc_selproc.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

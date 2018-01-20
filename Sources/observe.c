@@ -4,12 +4,12 @@
 //
 //
 
-#include "obsv.h"
-#include "obsv_private.h"
+#include "observe.h"
+#include "observe_priv.h"
 #include "stub.h"
-#include "selproc.h"
+#include "objc_selproc.h"
 #include "strproc.h"
-#include "objc.h"
+#include "objc_core.h"
 #include <objc/runtime.h>
 #include <pthread/pthread.h>
 
